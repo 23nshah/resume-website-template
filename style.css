@@ -1,0 +1,90 @@
+/*A CSS (cascading style sheet) file is meant for designing your website
+While optional, your website is going to look pretty bland without one :)*/
+
+
+/*The star, "*", means apply this attribute to EVERYTHING in your HTML, though 
+it is overridden in more specific items*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*You can also define certain attributes for all types (like h1, h2) like so*/
+body{
+    margin: 0; /* Reset the default margin for the body */
+    overflow-x: hidden;
+}
+
+/*CSS for DIV1*/
+.div1{
+    width: 100%; /*take up 100% width of whatever parent element it is in*/
+    min-height: 100vh; /*take up 100vh (viewport height) relative to your screen*/
+    background-color: black; /*self-explainatory*/
+    color: white; /*font color*/
+    text-align: center; /*aligns TEXT in the center*/ 
+    padding: 10%; /*gives whitespace within the div*/
+ }
+
+ .div2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10%;
+ }
+
+.name a{ 
+    color:gray;
+    text-decoration: none;
+}
+
+.name a:hover{
+    color:white;
+}
+
+/*Using # if you want to define something by its id instead of class
+The navbar is slightly more complicated*/
+#navbar{
+  padding-top: 2%;
+  padding-bottom: 2%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0;
+    position: fixed;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, padding-bottom 0.3s ease; /* Add other properties as needed */
+}
+
+#navbar.scrolled {
+    background-color: black;
+    padding-bottom: 10px;
+}
+  
+#navbar.unscrolled {
+    background-color: rgba(0, 0, 0, 0);
+    padding-bottom: 0; /* Adjust as needed */
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px
+}
+
+nav ul li a{
+    text-decoration: solid;
+    color:antiquewhite;
+    font-weight: 400;
+
+}
+
+
