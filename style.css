@@ -21,7 +21,7 @@ body{
 .div1{
     width: 100%; /*take up 100% width of whatever parent element it is in*/
     min-height: 100vh; /*take up 100vh (viewport height) relative to your screen*/
-    background-color: black; /*self-explainatory*/
+    background-color: rgb(110, 103, 234); /*self-explainatory*/
     color: white; /*font color*/
     text-align: center; /*aligns TEXT in the center*/ 
     padding: 10%; /*gives whitespace within the div*/
@@ -37,7 +37,7 @@ body{
  }
 
 .name a{ 
-    color:gray;
+    color:rgb(0, 0, 0);
     text-decoration: none;
 }
 
